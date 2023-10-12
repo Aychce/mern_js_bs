@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Time and Date</title>
+</head>
+<body>
+    <button id="showTimeButton">Show Time</button>
+    <button id="showDateButton">Show Date</button>
+    <p id="output"></p>
+
+    <script>
+        document.getElementById('showTimeButton').addEventListener('click', function() {
+            displayTime();
+        });
+
+        document.getElementById('showDateButton').addEventListener('click', function() {
+            displayDate();
+        });
+
+        function displayTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                day: '2-digit',
+                month: '2-digit',
+                year: '2-digit',
+                timeZoneName: 'short',
+                timeZone: 'Asia/Kolkata'
+            });
+
+            document.getElementById('output').textContent = timeString;
+        }
+
+        function displayDate() {
+            const now = new Date();
+            const dateString = now.toLocaleString('en-US', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+
+            document.getElementById('output').textContent = dateString;
+        }
+    </script>
+</body>
+</html>

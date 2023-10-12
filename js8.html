@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFC0CB, #FF69B4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0000FF;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            background: #fff;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+
+        .register-button {
+            background: #FFA500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <div class="input-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name">
+        </div>
+        <div class="input-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name">
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+        </div>
+        <div class="input-group">
+            <label for="re-enter-password">Re-enter Password:</label>
+            <input type="password" id="re-enter-password">
+        </div>
+        <div class="input-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age">
+        </div>
+        <div class="input-group">
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number">
+        </div>
+        <div class="input-group">
+            <label for="address">Address:</label>
+            <textarea id="address" rows="4"></textarea>
+        </div>
+        <div class="input-group">
+            <label for="state">State:</label>
+            <input type="text" id="state">
+        </div>
+        <div class="input-group">
+            <label for="country">Country:</label>
+            <select id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>Languages Known:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="english" name="languages" value="english">
+                <label for="english">English</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="kannada" name="languages" value="kannada">
+                <label for="kannada">Kannada</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="hindi" name="languages" value="hindi">
+                <label for="hindi">Hindi</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="telugu" name="languages" value="telugu">
+                <label for="telugu">Telugu</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="declaration">
+            <label for="declaration">I hereby declare that all the given details are true.</label>
+        </div>
+        <button class="register-button">Register</button>
+    </div>
+    <p>Log in to <a href="https://example.com">Ethnus website</a></p>
+</body>
+</html>
